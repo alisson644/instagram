@@ -13,10 +13,27 @@ class PicsController < ApplicationController
     @pic = Pic.new(pic_params)
 
     if @pic.save
-      redirect_to @pic, notice: "Yesss! It was posted!"
+      redirect_to @pic, notice: 'Yesss! It was posted!'
     else
       render 'new'
     end
+  end
+
+  def edit
+  end
+
+  def update
+    if @pic.update(pic_params)
+      redirect_to @pic, notice: 'Congrats! Pic was Updated!'
+    else
+      render 'edit'
+    end
+  end
+
+  def destroy
+    @pic.destroy
+
+    redirect_to root_path
   end
 
   private
