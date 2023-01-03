@@ -30,6 +30,9 @@ gem 'jquery-rails'
 #devise
 gem 'devise'
 
+#image upload
+gem "paperclip"
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
