@@ -27,6 +27,7 @@ gem 'simple_form'
 gem 'bootstrap-sass', '~> 3.4.1'
 gem 'jquery-rails'
 gem 'masonry-rails'
+gem 'acts_as_votable'
 
 #devise
 gem 'devise'
